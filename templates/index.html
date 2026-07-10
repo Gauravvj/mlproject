@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7ff, #e8f0ff);
+            color: #1f2d3d;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            max-width: 480px;
+        }
+        h1 {
+            margin-bottom: 12px;
+            font-size: 2rem;
+        }
+        p {
+            color: #5b6b7a;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            background: #4f46e5;
+            color: white;
+            transition: background 0.2s ease;
+        }
+        .btn:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Model Prediction App</h1>
+        <p>Use the form below to estimate a student's exam performance with the trained prediction model.</p>
+        <a class="btn" href="{{ url_for('predict_datapoint') }}">Go to Predict Page</a>
+    </div>
+</body>
+</html>
+
